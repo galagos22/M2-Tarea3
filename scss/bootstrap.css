@@ -24,6 +24,10 @@
   background-color: #033949;
 }
 
+.bg-opa {
+  background-color: rgba(52, 58, 64, 0.692) !important;
+}
+
 .bgi-nysl1 {
   background-image: url("../Imagenes/fondo_1_NYSL_cabecera.jpg");
   background-repeat: no-repeat;
