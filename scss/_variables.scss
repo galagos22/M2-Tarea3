@@ -12,7 +12,7 @@
 $color-nysl1: #a3ff15 !default;   // verde amarillo 164, 255, 74  #a3ff15
 
 
-$color-nysl2: #033949 !default;  // gris logo
+$color-nysl2: rgb(3, 57, 73) !default;  // gris logo
 
 
 $color-nysl3: #ffffff  !default;  // blanco
@@ -48,7 +48,7 @@ $color-nysl3: #ffffff  !default;  // blanco
 }
 
 .bg-opa {
-  background-color: rgba(52, 58, 64, 0.692) !important;  // transparente #343a40
+  background-color: rgba(3, 57, 73, 0.164) !important;  // transparente #343a40
 }
 
 
