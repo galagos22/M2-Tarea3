@@ -96,104 +96,345 @@
 
 
 
-            <div class="col-6 dark shadow p-3 mb-5 rounded bg-opa">   <!--inicia 1-colapso-->
+            <div class="col-6 dark shadow p-3 mb-5 rounded bg-opa">   <!--inicia 1-->
 
-                <form class="was-validated">
-                    <div class="mb-3">
-                      <label for="validationTextarea">Textarea</label>
-                      <textarea class="form-control is-invalid" id="validationTextarea" placeholder="Required example textarea" required></textarea>
-                      <div class="invalid-feedback">
-                        Please enter a message in the textarea.
-                      </div>
-                    </div>
-                  
-                    <div class="custom-control custom-checkbox mb-3">
-                      <input type="checkbox" class="custom-control-input" id="customControlValidation1" required>
-                      <label class="custom-control-label" for="customControlValidation1">Check this custom checkbox</label>
-                      <div class="invalid-feedback">Example invalid feedback text</div>
-                    </div>
-                  
-                    <div class="custom-control custom-radio">
-                      <input type="radio" class="custom-control-input" id="customControlValidation2" name="radio-stacked" required>
-                      <label class="custom-control-label" for="customControlValidation2">Toggle this custom radio</label>
-                    </div>
-                    <div class="custom-control custom-radio mb-3">
-                      <input type="radio" class="custom-control-input" id="customControlValidation3" name="radio-stacked" required>
-                      <label class="custom-control-label" for="customControlValidation3">Or toggle this other custom radio</label>
-                      <div class="invalid-feedback">More example invalid feedback text</div>
-                    </div>
-                  
-                    <div class="mb-3">
-                      <select class="custom-select" required>
-                        <option value="">Choose...</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                      </select>
-                      <div class="invalid-feedback">Example invalid custom select feedback</div>
-                    </div>
-                  
-                    <div class="custom-file mb-3">
-                      <input type="file" class="custom-file-input" id="validatedCustomFile" required>
-                      <label class="custom-file-label" for="validatedCustomFile">Choose file...</label>
-                      <div class="invalid-feedback">Example invalid custom file feedback</div>
-                    </div>
-                  
-                    <div class="mb-3">
-                      <div class="input-group is-invalid">
-                        <div class="input-group-prepend">
-                          <span class="input-group-text" id="validatedInputGroupPrepend">@</span>
-                        </div>
-                        <input type="text" class="form-control is-invalid" aria-describedby="validatedInputGroupPrepend" required>
-                      </div>
-                      <div class="invalid-feedback">
-                        Example invalid input group feedback
-                      </div>
-                    </div>
-                  
-                    <div class="mb-3">
-                      <div class="input-group is-invalid">
-                        <div class="input-group-prepend">
-                          <label class="input-group-text" for="validatedInputGroupSelect">Options</label>
-                        </div>
-                        <select class="custom-select" id="validatedInputGroupSelect" required>
-                          <option value="">Choose...</option>
-                          <option value="1">One</option>
-                          <option value="2">Two</option>
-                          <option value="3">Three</option>
-                        </select>
-                      </div>
-                      <div class="invalid-feedback">
-                        Example invalid input group feedback
-                      </div>
-                    </div>
-                  
-                    <div class="input-group is-invalid">
-                      <div class="custom-file">
-                        <input type="file" class="custom-file-input" id="validatedInputGroupCustomFile" required>
-                        <label class="custom-file-label" for="validatedInputGroupCustomFile">Choose file...</label>
-                      </div>
-                      <div class="input-group-append">
-                         <button class="btn btn-outline-secondary" type="button">Button</button>
-                      </div>
-                    </div>
-                    <div class="invalid-feedback">
-                      Example invalid input group feedback
-                    </div>
-                  </form>
+              <h4 class="text-center">Datos del Jugador</h4>
+
+              <form>
+
+                <div class="form-row">
+
+                  <div class="col">
+                    <input type="text" class="form-control" placeholder="First name">
+                  </div>
+                  <div class="col">
+                    <input type="text" class="form-control" placeholder="Last name">
+                  </div>
+                </div>
+
+
+                <div class="form-row">
+
+                  <div class="form-group col-md-6">
+                    <label for="inputEmail4">Email</label>
+                    <input type="email" class="form-control" id="inputEmail4">
+                  </div>
+
+
+                  <div class="form-group col-md-6">
+                    <label for="inputPassword4">Password</label>
+                    <input type="password" class="form-control" id="inputPassword4">
+                  </div>
+
+                </div>
+
+
+                <div class="form-group">
+                  <label for="inputAddress">Nombre</label>
+                  <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                </div>
+
+
+                <div class="form-group">
+                  <label for="inputAddress2">Apellido</label>
+                  <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                </div>
+
+                <div class="form-row">
+
+                  <div class="form-group col-md-6">
+                    <label for="inputCity">City</label>
+                    <input type="text" class="form-control" id="inputCity">
+                  </div>
+
+                  <div class="form-group col-md-4">
+                    <label for="inputState">State</label>
+                    <select id="inputState" class="form-control">
+                      <option selected>Choose...</option>
+                      <option>...</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group col-md-2">
+                    <label for="inputZip">Zip</label>
+                    <input type="text" class="form-control" id="inputZip">
+                  </div>
+
+                </div>
+
+
+                <div class="form-group">
+
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                      Check me out
+                    </label>
+                  </div>
+
+                </div>
+                <button type="submit" class="btn btn-primary">Sign in</button>
+              </form>
             
     
-            </div>   <!--fin 1-colapso-->
+            </div>   <!--fin 1--->
+    
+    
+            <!---  **********************************   -->
+
+
+            <div class="col-6 dark shadow p-3 mb-5 rounded bg-opa">   <!--inicia 2-->
+
+              <form id="formulario" action="show_data.html" method="get" accept-charset="ISO-8859-1" enctype="multipart/form-data">
+            
+                <h4 id="jugador">Datos del Jugador</h4>
+    
+                <div class="preguntas conetendor-jugador">
+    
+                   <div class="grid-jugador">
+                    <label for="nombre" >Nombre:</label>
+                    <input id="nombre" name="nombre" type="text" placeholder="Ingrese su nombre" required>
+                   </div>
+    
+    
+                   <div class="grid-jugador">
+                    <label for="apellido">Apellido:</label>
+                    <input id="apellido" name="apellido" type="text" placeholder="Ingrese su apellido" required>
+                   </div>
+    
+    
+                   <div class="grid-jugador">
+                    <label for="dirección">Dirección:</label>
+                    <input id="dirección" name="dirección" type="text" placeholder="Ingrese su dirección" required>
+                   </div>
+    
+    
+                   <div class="grid-jugador">
+                    <label for="ciudad">Ciudad:</label>
+                    <input id="ciudad" name="ciudad" type="text" placeholder="Ingrese su ciudad" required>
+                   </div>
+    
+    
+                   <div class="grid-jugador">
+                    <label for="codigo-postal">Codogo Postal:</label>
+                    <input id="codigo-postal" name="codigo-postal" type="number" placeholder="Ingrese su codigo postal" required>
+                   </div>
+    
+    
+                   <div class="grid-jugador">
+                    <label for="fecha-nacimiento">Fecha de nacimiento:</label>
+                    <input id="fecha-nacimiento" name="fecha-nacimiento" type="date" required>
+                   </div>
+    
+    
+                   <div class="grid-jugador">
+                    <label for="género">Género:</label>
+                    <input id="género" name="mujer" type="radio">Mujer
+                    <input id="género" name="hombre" type="radio">Hombre
+                   </div>
+    
+    
+                   <div class="grid-jugador">
+                    <label for="grado">Grado:</label>
+                            <select name="grado" id="grado" required>
+                                <option selected disabled value="Selecciona una opción">Selecciona una opción</option>
+                                <option value="Preescolar">Preescolar</option>
+                                <option value="1° Grado">1° Grado</option>
+                                <option value="2° Grado">2° Grado</option>
+                                <option value="3° Grado">3° Grado</option>
+                                <option value="4° Grado">4° Grado</option>
+                                <option value="5° Grado">5° Grado</option>
+                            </select>
+                   </div>
+    
+    
+                   <div class="grid-jugador">
+                    <label for="e-mail">E-mail:</label>
+                    <input id="e-mail" name="e-mail" type="e-mail" placeholder="Ingrese su e-mail" required>
+                   </div>
+    
+    
+                   <div class="grid-jugador">
+                    <label for="celular">Celular:</label>
+                    <input id="celular" name="celular" type="tel" placeholder="Ingrese su celular" required>
+                   </div>
+                        
+                </div>
+    
+    
+                
+    
+                <label for="escuela"><h4>¿De que escuela vives mas cerca?</h4></label> 
+                
+                <div class="preguntas">
+                    <label for="escuela">Seleccione una escuela:</label>
+                
+                    <select name="escuela" id="escuela" required>
+                            <option selected disabled value="Selecciona una opción">Selecciona una opción</option>
+                            <option value="AJ Katzenmaier">AJ Katzenmaier</option>
+                            <option value="Greenbay">Greenbay</option>
+                            <option value="Howard A Yeager">Howard A Yeager</option>
+                            <option value="Marjorie P Hart">Marjorie P Hart</option>
+                            <option value="North Elementary">North Elementary</option>
+                            <option value="South Elementary">South Elementary</option>
+    
+                    </select>  
+    
+                    
+                                    
+                </div>
+                <br><br>
+               
+    
+                <label for="posicion"><h4>¿Qué posición(es) juegas normalmente? (marque todas las que correspondan)</h4></label>
+                
+                <div class="preguntas">
+    
+                    <input id="posicion" name="Delantero" type="checkbox">Delantero
+                    <br>
+                    <input id="posicion" name="Portero" type="checkbox">Portero
+                    <br>
+                    <input id="posicion" name="Mediocampo" type="checkbox">Mediocampo
+                    <br>
+                    <input id="posicion" name="Defensa" type="checkbox">Defensa
+                      
+    
+                </div>
+                <br><br>
+                
+                
+                <label for="uniforme"><h4>Tamaño uniforme:</h4></label>
+                
+                <div class="preguntas">
+    
+                    <label for="uniforme">Elija tamaño de uniforme:</label>
+                
+                        <select name="uniforme" id="uniforme" required>
+                            <option selected disabled value="Selecciona una opción">Selecciona una opción</option>
+                            <option value="Niño P">Niño P</option>
+                            <option value="Niño M">Niño M</option>
+                            <option value="Niño G">Niño G</option>
+                            <option value="Pequeño">Pequeño</option>
+                            <option value="Mediano">Mediano</option>
+                            <option value="Grande">Grande</option>
+                            <option value="Extra-Grande">Extra-Grande</option>
+    
+                        </select>
+    
+                </div>
+                <br><br>
+                
+                <label for="permiso"><h4>Permiso para jugar:</h4></label>
+                
+                
+                <div class="preguntas container-firma">
+                        
+                         
+                    <div class="grid-firma item1">
+    
+                         <p id="firmar" class="firma-especial">Yo, el padre o tutor del solicitante de registro menor, estoy de acuerdo en que el solicitante de registro y 
+                        yo acataremos todas las reglas de la Northside Youth Soccer League (NYSL). Al reconocer la posibilidad 
+                         de lesiones físicas asociadas al fútbol y en consideración a la"Liga" que acepta al solicitante de registro 
+                         para sus programas y actividades de fútbol, Por la presente libero y descargo a NYSL, sus empleados y 
+                         personal asociado y voluntarios, incluyendo las instalaciones utilizadas para prácticas y juegos, contra 
+                        cualquier reclamo por o en nombre del solicitante de registro como resultado de la participación del 
+                        solicitante del programa a o en el transporte desde o hacia las actividades patrocinadas por NYSL.
+                        <br><br>
+                        Al firmar a continuación, acuerdo y autorizo lo anterior. Además, al firmar a continuación, reconozco 
+                        que he leído la política de cancelación y acepto sus términos.
+                        </p>
+    
+                    </div>
+                    
+                    <div class="grid-firma item2">
+                        <input id="acepto" name="acepto" type="checkbox" required>Acepto y Autorizo
+                    </div> 
+                                    
+                    <div class="grid-firma item3">
+                        <label for="archivo">Suba archivo de autorizacion firmada</label><br>
+                        <input id="archivo" name="archivo" type="file" required>
+                    </div>
+    
+                </div>
+    
+    
+                <h4>Revise su datos y antes de enviar el formulario</h4>
+                    
+                    <div class="preguntas">
+    
+                        <div class="container-envio">
+                     
+                            <div class="grid-envio item4">
+                                <button type="submit">Enviar Formulario <br> de inscripción</button>
+                            </div>
+                            
+                            <div class="grid-envio item5">
+                                <button type="reset">Limpiar <br> formulario</button>
+                            </div>
+    
+                     <!--</div>-->   
+                   <!-- </div>-->
+    
+            </form> 
+            
+    
+            </div>   <!--fin 2-->
     
     
             <!---  **********************************   -->
     
     
-            <div class="col-6 dark shadow p-3 mb-5 rounded bg-opa">   <!--2-inicia carrusel-->
+            <div class="col-6 dark shadow p-3 mb-5 rounded bg-opa">   <!--inicia 3-->
+
+
+
+
+                <div class="">
+
+                  <p id="firmar" class="firma-especial">Yo, el padre o tutor del solicitante de registro menor, estoy de acuerdo en que el solicitante de registro y 
+                    yo acataremos todas las reglas de la Northside Youth Soccer League (NYSL). Al reconocer la posibilidad 
+                     de lesiones físicas asociadas al fútbol y en consideración a la"Liga" que acepta al solicitante de registro 
+                     para sus programas y actividades de fútbol, Por la presente libero y descargo a NYSL, sus empleados y 
+                     personal asociado y voluntarios, incluyendo las instalaciones utilizadas para prácticas y juegos, contra 
+                    cualquier reclamo por o en nombre del solicitante de registro como resultado de la participación del 
+                    solicitante del programa a o en el transporte desde o hacia las actividades patrocinadas por NYSL.
+                    <br><br>
+                    Al firmar a continuación, acuerdo y autorizo lo anterior. Además, al firmar a continuación, reconozco 
+                    que he leído la política de cancelación y acepto sus términos.
+                    </p> <br><br>
+
+
+
+                    <p>Descargue archivo de autorizacion para ser firmado por por Padre o Tutor</p>
+                    <a  href="./doc/Formulario-NYSL.pdf", download="Autorizacion.pdf"> <button type="button" class="btn btn-warning">Descargar Autorizacion</button> </a>
+                </div>
+
+
+
+                <div class="preguntas container-firma">
+                    
+                     
+                  <div class="grid-firma item1">
+  
+                        
+                  </div>
+                  
+                  <div class="">
+                      <input id="acepto" name="acepto" type="checkbox" required>Acepto y Autorizo
+                  </div> 
+                                  
+                  <div class="">
+                      <label for="archivo">Suba archivo de autorizacion firmada</label><br>
+                      <input id="archivo" name="archivo" type="file" required>
+                  </div>
+  
+              </div>
+
     
-    
-            </div>   <!--fin 2-carrusel-->
-    
+            </div>   <!--fin 3-->
+
+
+            <!---  **********************************   -->
     
         </div>
 
