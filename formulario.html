@@ -71,7 +71,7 @@
                           <div class="dropdown-menu op dark shadow rounded" aria-labelledby="navbarDropdownMenuLink">
                             <a class="dropdown-item dark shadow rounded" href="partidos.html"><i class="bi bi-info-square"></i> Partidos</a>
                             <a class="dropdown-item dark shadow rounded" href="reglas.html"><i class="bi bi-file-earmark-ruled"></i> Reglamento</a>
-                            <a class="dropdown-item dark shadow rounded" href="contacto.html"><i class="bi bi-person-lines-fill"></i> Contactanos</a>
+                            
                           </div>
                         </li>
                       </ul>
@@ -90,186 +90,122 @@
 
 
     <main class="bgi-nysl2 m-2">
+      <div class="p-5">
+
+        <h2 class="text-nysl3 text-center display-4"><i class="bi bi-file-earmark-person"></i> Ficha de inscripcion del Postulante</h2>
 
 
-        <div class="row m-5" >  <!--2 columnas para trabajar: 1-carrusel, 2-colapso-->
-
-
-
-            <div class="col-6 dark shadow p-3 mb-5 rounded bg-opa">   <!--inicia 1-->
-
-              <h4 class="text-center">Datos del Jugador</h4>
-
-              <form>
-
-                <div class="form-row">
-
-                  <div class="col">
-                    <input type="text" class="form-control" placeholder="First name">
-                  </div>
-                  <div class="col">
-                    <input type="text" class="form-control" placeholder="Last name">
-                  </div>
-                </div>
-
-
-                <div class="form-row">
-
-                  <div class="form-group col-md-6">
-                    <label for="inputEmail4">Email</label>
-                    <input type="email" class="form-control" id="inputEmail4">
-                  </div>
-
-
-                  <div class="form-group col-md-6">
-                    <label for="inputPassword4">Password</label>
-                    <input type="password" class="form-control" id="inputPassword4">
-                  </div>
-
-                </div>
-
-
-                <div class="form-group">
-                  <label for="inputAddress">Nombre</label>
-                  <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-                </div>
-
-
-                <div class="form-group">
-                  <label for="inputAddress2">Apellido</label>
-                  <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-                </div>
-
-                <div class="form-row">
-
-                  <div class="form-group col-md-6">
-                    <label for="inputCity">City</label>
-                    <input type="text" class="form-control" id="inputCity">
-                  </div>
-
-                  <div class="form-group col-md-4">
-                    <label for="inputState">State</label>
-                    <select id="inputState" class="form-control">
-                      <option selected>Choose...</option>
-                      <option>...</option>
-                    </select>
-                  </div>
-
-                  <div class="form-group col-md-2">
-                    <label for="inputZip">Zip</label>
-                    <input type="text" class="form-control" id="inputZip">
-                  </div>
-
-                </div>
-
-
-                <div class="form-group">
-
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="gridCheck">
-                    <label class="form-check-label" for="gridCheck">
-                      Check me out
-                    </label>
-                  </div>
-
-                </div>
-                <button type="submit" class="btn btn-primary">Sign in</button>
-              </form>
+          
             
-    
-            </div>   <!--fin 1--->
-    
-    
-            <!---  **********************************   -->
 
+              
+          <!--fin 1--->
 
-            <div class="col-6 dark shadow p-3 mb-5 rounded bg-opa">   <!--inicia 2-->
+        <form id="formulario" action="show_data.html" method="get" accept-charset="ISO-8859-1" enctype="multipart/form-data">
+          
+          <div class="row m-5" > <!--inicio row lado izquierdo-->   
 
-              <form id="formulario" action="show_data.html" method="get" accept-charset="ISO-8859-1" enctype="multipart/form-data">
-            
-                <h4 id="jugador">Datos del Jugador</h4>
+            <div class="col-6 dark shadow p-3 mb-5 rounded bg-opa"> <!--inicio datos b1-->
+                
     
-                <div class="preguntas conetendor-jugador">
+                <div class="form-row text-nysl3">
     
-                   <div class="grid-jugador">
+                   <div class="form-group col-6 ">
                     <label for="nombre" >Nombre:</label>
-                    <input id="nombre" name="nombre" type="text" placeholder="Ingrese su nombre" required>
+                    <input id="nombre" name="nombre" type="text" class="form-control" placeholder="Ingrese su nombre" required>
                    </div>
     
     
-                   <div class="grid-jugador">
+                   <div class="form-group col-6">
                     <label for="apellido">Apellido:</label>
-                    <input id="apellido" name="apellido" type="text" placeholder="Ingrese su apellido" required>
+                    <input id="apellido" name="apellido" type="text" class="form-control" placeholder="Ingrese su apellido" required>
                    </div>
-    
-    
-                   <div class="grid-jugador">
-                    <label for="dirección">Dirección:</label>
-                    <input id="dirección" name="dirección" type="text" placeholder="Ingrese su dirección" required>
-                   </div>
-    
-    
-                   <div class="grid-jugador">
-                    <label for="ciudad">Ciudad:</label>
-                    <input id="ciudad" name="ciudad" type="text" placeholder="Ingrese su ciudad" required>
-                   </div>
-    
-    
-                   <div class="grid-jugador">
-                    <label for="codigo-postal">Codogo Postal:</label>
-                    <input id="codigo-postal" name="codigo-postal" type="number" placeholder="Ingrese su codigo postal" required>
-                   </div>
-    
-    
-                   <div class="grid-jugador">
+
+
+                   <div class="form-group col-4">
                     <label for="fecha-nacimiento">Fecha de nacimiento:</label>
-                    <input id="fecha-nacimiento" name="fecha-nacimiento" type="date" required>
+                    <input id="fecha-nacimiento" name="fecha-nacimiento" class="form-control" type="date" required>
+                   </div>
+
+
+                   <div class="form-group col-4 text-center">
+
+                      <label for="género">Género: </label> <br>
+
+                      <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="customRadioInline1" name="customRadioInline" class="custom-control-input">
+                        <label class="custom-control-label" for="customRadioInline1">Mujer</label>
+                      </div>
+                      <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="customRadioInline2" name="customRadioInline" class="custom-control-input">
+                        <label class="custom-control-label" for="customRadioInline2">Hombre</label>
+                      </div>
                    </div>
     
     
-                   <div class="grid-jugador">
-                    <label for="género">Género:</label>
-                    <input id="género" name="mujer" type="radio">Mujer
-                    <input id="género" name="hombre" type="radio">Hombre
+                   <div class="form-group col-4">
+                    <label for="grado">Grado:</label> <br>
+                      <select class="custom-select">
+                          <option selected>Selecciona una opción</option>
+                          <option value="Preescolar">Preescolar</option>
+                          <option value="1° Grado">1° Grado</option>
+                          <option value="2° Grado">2° Grado</option>
+                          <option value="3° Grado">3° Grado</option>
+                          <option value="4° Grado">4° Grado</option>
+                          <option value="5° Grado">5° Grado</option>
+                      </select>
+                            
+                            
                    </div>
     
     
-                   <div class="grid-jugador">
-                    <label for="grado">Grado:</label>
-                            <select name="grado" id="grado" required>
-                                <option selected disabled value="Selecciona una opción">Selecciona una opción</option>
-                                <option value="Preescolar">Preescolar</option>
-                                <option value="1° Grado">1° Grado</option>
-                                <option value="2° Grado">2° Grado</option>
-                                <option value="3° Grado">3° Grado</option>
-                                <option value="4° Grado">4° Grado</option>
-                                <option value="5° Grado">5° Grado</option>
-                            </select>
+                   <div class="form-group col-6">
+                    <label for="dirección">Dirección:</label>
+                    <input id="dirección" name="dirección" type="text" class="form-control"  placeholder="Ingrese su dirección" required>
                    </div>
     
     
-                   <div class="grid-jugador">
-                    <label for="e-mail">E-mail:</label>
-                    <input id="e-mail" name="e-mail" type="e-mail" placeholder="Ingrese su e-mail" required>
+                   <div class="form-group col-4">
+                    <label for="ciudad">Ciudad:</label>
+                    <input id="ciudad" name="ciudad" type="text" class="form-control"  placeholder="Ingrese su ciudad" required>
                    </div>
     
     
-                   <div class="grid-jugador">
-                    <label for="celular">Celular:</label>
-                    <input id="celular" name="celular" type="tel" placeholder="Ingrese su celular" required>
+                   <div class="form-group col-2">
+                    <label for="codigo-postal">Codogo Postal:</label>
+                    <input id="codigo-postal" name="codigo-postal" type="number" class="form-control"  placeholder="Ingrese su codigo postal" required>
                    </div>
-                        
+    
+    
+                   
+                    <div class="form-group col-6">
+                        <label for="inputEmail4">Email</label>
+                        <input type="email" class="form-control" id="inputEmail4"placeholder="Ingrese su e-mail" required>
+                    </div>
+
+                    <div class="form-group col-6">
+                        <label for="inputEmail4">Numero de contacto</label>
+                        <input type="number" class="form-control" id="inputEmail4"placeholder="Ingrese su numero de contactol" required>
+                    </div>
+    
+                    
                 </div>
+
+            </div>  <!--sin datos b1-->
+
+
+
+            <div class="col-1"></div> <!--separador de columnas quedando 3 columnad de: col-6 col-1 col-5-->
+
+
+            
+            <div class="col-5 dark shadow p-3 mb-5 rounded bg-opa text-nysl3">  <!-- inicio datos b2-->
     
-    
+               <h4>¿De que escuela vives mas cerca?</h4> <br>
                 
-    
-                <label for="escuela"><h4>¿De que escuela vives mas cerca?</h4></label> 
-                
-                <div class="preguntas">
-                    <label for="escuela">Seleccione una escuela:</label>
-                
-                    <select name="escuela" id="escuela" required>
+                <div class="form-group col-12">
+                    <label for="escuela">Seleccione una escuela:</label> <br>
+                    <select name="escuela" id="escuela" class="custom-select" required>
                             <option selected disabled value="Selecciona una opción">Selecciona una opción</option>
                             <option value="AJ Katzenmaier">AJ Katzenmaier</option>
                             <option value="Greenbay">Greenbay</option>
@@ -277,39 +213,48 @@
                             <option value="Marjorie P Hart">Marjorie P Hart</option>
                             <option value="North Elementary">North Elementary</option>
                             <option value="South Elementary">South Elementary</option>
-    
-                    </select>  
-    
-                    
-                                    
+                    </select>                                      
                 </div>
                 <br><br>
+
+              
                
     
-                <label for="posicion"><h4>¿Qué posición(es) juegas normalmente? (marque todas las que correspondan)</h4></label>
+                <h4>¿Qué posición(es) juegas normalmente? (marque todas las que correspondan)</h4> <br>
                 
-                <div class="preguntas">
-    
-                    <input id="posicion" name="Delantero" type="checkbox">Delantero
-                    <br>
-                    <input id="posicion" name="Portero" type="checkbox">Portero
-                    <br>
-                    <input id="posicion" name="Mediocampo" type="checkbox">Mediocampo
-                    <br>
-                    <input id="posicion" name="Defensa" type="checkbox">Defensa
-                      
-    
+                <div class="col-12 form-group form-row pl-5">
+
+                    <div class="custom-control custom-switch col-6">
+                        <label class="custom-control-label" for="customSwitch1">Delantero</label>
+                        <input type="checkbox" class="custom-control-input form-control" id="customSwitch1" name="Delantero">
+                    </div>
+
+                    <div class="custom-control custom-switch col-6">
+                      <label class="custom-control-label" for="customSwitch2">Portero</label>
+                      <input type="checkbox" class="custom-control-input form-control" id="customSwitch2" name="Portero">
+                    </div>
+
+                    <div class="custom-control custom-switch col-6">
+                      <label class="custom-control-label" for="customSwitch3">Mediocampo</label>
+                      <input type="checkbox" class="custom-control-input form-control" id="customSwitch3" name="Mediocampo">
+                    </div>
+
+                    <div class="custom-control custom-switch col-6">
+                      <label class="custom-control-label" for="customSwitch4">Defensa</label>
+                      <input type="checkbox" class="custom-control-input form-control" id="customSwitch4" name="Defensa">
+                    </div>
+                    
                 </div>
                 <br><br>
                 
                 
-                <label for="uniforme"><h4>Tamaño uniforme:</h4></label>
+                <h4>Tamaño uniforme:</h4> <br>
                 
-                <div class="preguntas">
+                <div class="form-group col-12">
     
-                    <label for="uniforme">Elija tamaño de uniforme:</label>
+                    <label for="uniforme">Elija tamaño de uniforme:</label> <br>
                 
-                        <select name="uniforme" id="uniforme" required>
+                        <select name="uniforme" id="uniforme" class="custom-select" required>
                             <option selected disabled value="Selecciona una opción">Selecciona una opción</option>
                             <option value="Niño P">Niño P</option>
                             <option value="Niño M">Niño M</option>
@@ -318,80 +263,25 @@
                             <option value="Mediano">Mediano</option>
                             <option value="Grande">Grande</option>
                             <option value="Extra-Grande">Extra-Grande</option>
-    
                         </select>
     
                 </div>
+
                 <br><br>
-                
-                <label for="permiso"><h4>Permiso para jugar:</h4></label>
-                
-                
-                <div class="preguntas container-firma">
-                        
-                         
-                    <div class="grid-firma item1">
-    
-                         <p id="firmar" class="firma-especial">Yo, el padre o tutor del solicitante de registro menor, estoy de acuerdo en que el solicitante de registro y 
-                        yo acataremos todas las reglas de la Northside Youth Soccer League (NYSL). Al reconocer la posibilidad 
-                         de lesiones físicas asociadas al fútbol y en consideración a la"Liga" que acepta al solicitante de registro 
-                         para sus programas y actividades de fútbol, Por la presente libero y descargo a NYSL, sus empleados y 
-                         personal asociado y voluntarios, incluyendo las instalaciones utilizadas para prácticas y juegos, contra 
-                        cualquier reclamo por o en nombre del solicitante de registro como resultado de la participación del 
-                        solicitante del programa a o en el transporte desde o hacia las actividades patrocinadas por NYSL.
-                        <br><br>
-                        Al firmar a continuación, acuerdo y autorizo lo anterior. Además, al firmar a continuación, reconozco 
-                        que he leído la política de cancelación y acepto sus términos.
-                        </p>
-    
-                    </div>
-                    
-                    <div class="grid-firma item2">
-                        <input id="acepto" name="acepto" type="checkbox" required>Acepto y Autorizo
-                    </div> 
-                                    
-                    <div class="grid-firma item3">
-                        <label for="archivo">Suba archivo de autorizacion firmada</label><br>
-                        <input id="archivo" name="archivo" type="file" required>
-                    </div>
-    
-                </div>
-    
-    
-                <h4>Revise su datos y antes de enviar el formulario</h4>
-                    
-                    <div class="preguntas">
-    
-                        <div class="container-envio">
-                     
-                            <div class="grid-envio item4">
-                                <button type="submit">Enviar Formulario <br> de inscripción</button>
-                            </div>
-                            
-                            <div class="grid-envio item5">
-                                <button type="reset">Limpiar <br> formulario</button>
-                            </div>
-    
-                     <!--</div>-->   
-                   <!-- </div>-->
-    
-            </form> 
-            
-    
-            </div>   <!--fin 2-->
-    
-    
-            <!---  **********************************   -->
-    
-    
-            <div class="col-6 dark shadow p-3 mb-5 rounded bg-opa">   <!--inicia 3-->
+
+            </div> <!--fin datos del postulante b2-->
 
 
 
 
-                <div class="">
+            <div class="col-12 dark shadow p-3 mb-5 rounded bg-opa text-nysl3 text-center">   <!--inicia 3-->
 
-                  <p id="firmar" class="firma-especial">Yo, el padre o tutor del solicitante de registro menor, estoy de acuerdo en que el solicitante de registro y 
+            <h4 class="">Autorizacion para jugar</h4> <br>
+
+
+                <div class="">  <!--inicia autorizacion-->
+
+                  <p class="">Yo ___________________________________, el padre o tutor del solicitante de registro menor, estoy de acuerdo en que el solicitante de registro y 
                     yo acataremos todas las reglas de la Northside Youth Soccer League (NYSL). Al reconocer la posibilidad 
                      de lesiones físicas asociadas al fútbol y en consideración a la"Liga" que acepta al solicitante de registro 
                      para sus programas y actividades de fútbol, Por la presente libero y descargo a NYSL, sus empleados y 
@@ -404,42 +294,60 @@
                     </p> <br><br>
 
 
+                    <div class="form-check text-center">
+                      <h5><input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="..."required>  Acepto y Autorizo</h5>
+                    </div>
 
-                    <p>Descargue archivo de autorizacion para ser firmado por por Padre o Tutor</p>
-                    <a  href="./doc/Formulario-NYSL.pdf", download="Autorizacion.pdf"> <button type="button" class="btn btn-warning">Descargar Autorizacion</button> </a>
-                </div>
+                    <div class="form-row">
 
+                        <div class="col-12 text-center">
+                          <p>Descargue archivo de autorizacion para ser firmado por por Padre o Tutor</p>
+                          <a  href="./doc/Formulario-NYSL.pdf", download="Autorizacion.pdf"> <button type="button" class="btn btn-warning"><i class="bi bi-file-earmark-pdf"></i>  Descargar Autorizacion</button> </a>
+                          <br><br>
+                        </div>
 
+                    </div>
 
-                <div class="preguntas container-firma">
                     
-                     
-                  <div class="grid-firma item1">
-  
-                        
-                  </div>
-                  
-                  <div class="">
-                      <input id="acepto" name="acepto" type="checkbox" required>Acepto y Autorizo
+
+                    <div class="custom-file col-6 p-5">
+                      <input type="file" class="custom-file-input" id="customFileLang" required>
+                      <label class="custom-file-label" for="customFileLang">Suba archivo de autorizacion firmada</label>
+                    </div>
+
+                </div>  <!--fin autorizacion-->
+
+
+                
+              
+                <div class="col-12 text-center p-5"> <!--inicio botones de envio y limpiar-->
+
+                  <h4>Revise su datos y antes de enviar el formulario</h4>
+
+                  <div class="form-row p-2">
+               
+                      <div class="col-6 text-right">
+                          <button class="btn btn-warning" type="submit"><i class="bi bi-upload"></i>  Enviar Formulario</button>
+                      </div>
+                      
+                      <div class="col-6 text-left">
+                          <button class="btn btn-warning" type="reset"><i class="bi bi-trash"></i>  Limpiar Formulario</button>
+                      </div>
+
                   </div> 
-                                  
-                  <div class="">
-                      <label for="archivo">Suba archivo de autorizacion firmada</label><br>
-                      <input id="archivo" name="archivo" type="file" required>
-                  </div>
-  
-              </div>
+
+                </div>  <!--fin botones envio y limpiar-->
 
     
-            </div>   <!--fin 3-->
+            </div> <!--fin 3-->
+                
+
+          </div>  <!--inicio row lado izquierdo--> 
+
+        </form> <!--fin del formulario-->
 
 
-            <!---  **********************************   -->
-    
-        </div>
-
-
-
+      </div> 
     </main>
 
 
